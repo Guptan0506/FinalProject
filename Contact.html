@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Logo.ico" type="image/ico">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div>
+          <img id="logo" src="Images/Logo.ico" alt="Logo Img"><a href="Images/Logo.ico"></a>
+      </div>
+
+      <div class="menu-toggle" id="menuToggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+
+      <ul class="nav-links" id="navLinks"> 
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="Interests.html">Interests</a></li>
+          <li><a href="Resume.html">Resume</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+      </ul>
+  </nav>
+  <button id="playButton">Play Audio</button>
+  <audio id="audioPlayer" src="FinalProjectaudio.mp3" preload="auto" loop></audio>
+
+    <script src="audio.js"></script>
+    <script src="script.js"></script>
+    <div id="trail-container"></div>
+    <script src="snakepointer.js"></script>
+	
+    <div>
+      <div>
+
+        <main>
+          <img class="ContactMeImage rounded-corners" src="Images/contact-us-image.jpg" alt="Image saying Comtact Us">
+          <h1>CONTACT ME</h1>
+            <h3>You can contact me on:</h3>
+            <p class="Contact"><i class='bx bx-phone'></i><a href="tel:+1(567)901-1773"> Phone number: +1(567)901-1773</a>
+            <p class="Contact"><i class='bx bxl-instagram'></i><a href="https://www.instagram.com/navyag956/"> Instagram: navyag956</a></p>
+            <p class="Contact"><i class='bx bxl-linkedin' ></i><a href="https://www.linkedin.com/in/navya-gupta-6b1973293/"> LinkedIn: navya-gupta-6b1973293</a></p>
+            <p class="Contact"><i class='bx bxl-github' ></i><a href="https://github.com/Guptan0506"> GitHub: Guptan0506</a></p>
+            <p class="Contact"><i class='bx bxl-gmail' ></i><a href="mailto:gupta2ny@mail.uc.edu"> E-mail:gupta2ny@mail.uc.edu</a></p>
+            <h3>Or you can send me a message by entering your:</h3>
+            <form>
+                <label for="FName">First Name: </label>
+                <input class="RoundCorners" type="text" id="FName" name="FName" required><br><br>
+
+                <label for="LName">Last Name: </label>
+                <input class="RoundCorners" type="text" id = "LName" name = "LName" required><br><br>
+
+                <label for="email">E-mail: </label>
+                <input class="RoundCorners" type="email" id="email" name="email" size="40" required><br><br>
+
+                <label for="phone">Phone: </label>
+                <input class="RoundCorners" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+                <label for="message">Message:</label>
+                <textarea class="RoundCorners" id="message" name="message" rows="2" cols="30" required></textarea><br><br>
+
+                <input class="rounded-corners btn" type="submit" value="Submit">
+            </form>
+        </main>
+      </div>
+    </div>
+    
+    <footer>
+      <p>&copy; Copyright 2024 by Navya Gupta</p>
+      <p><a href="mailto:gupta2ny@mail.uc.edu">gupta2ny@mail.uc.edu</a></p>
+      <ul class="socials">
+          <li><a href="https://www.instagram.com/navyag956/" target="_blank"><img src="Images/icon-logo-instagram.png" alt="My Instagram"></a></li>
+          <li><a href="https://www.linkedin.com/in/navya-gupta-6b1973293/" target="_blank"><img src="Images/icon-logo-linkedin.png" alt="My LinkedIn profile"></a></li>
+          <li><a href="https://github.com/Guptan0506" target="_blank"><img src="Images/icon-logo-github.png" alt="My GitHub profile"></a></li>
+      </ul>
+  </footer>
+  </body>
+</html>
